@@ -20,7 +20,7 @@ If the program requires something else, it will have some comments too. For exam
 ```
 Octave: %go to https://octave.sourceforge.io/packages.php and download the 'Symbolic Package'.
         %Follow the instructions to install.
-        %I you have problems to install it google your error or ask me.
+        %I you have problems to install it, google your error or ask me.
 ```
 
 ```
