@@ -12,18 +12,20 @@ Maybe something less abstract, or maybe completely out of this world.
 
 ### Installing
 
-If the program is in python, you'll need to have installed numpy, matplotlib, scipy. If the program is Matlab and you prefer to use Octave,
+If the program is in python, you'll need to have installed at least numpy, matplotlib, scipy. If the program is Matlab and you prefer to use Octave,
 I will put some comments with the list of packages you need to install.
 
 If the program requires something else, it will have some comments too. For example:
 
 ```
-Octave: go to https://octave.sourceforge.io/packages.php and download the 'Symbolic Package'. Follow the instructions to install.
+Octave: go to https://octave.sourceforge.io/packages.php and download the 'Symbolic Package'.
+        Follow the instructions to install.
         I you have problems to install it google your error or ask me.
 ```
 
 ```
-Python: use the command pip install 'your package' or if you have Anaconda installed, conda install 'your package'. You can visit 
+Python: use the command pip install 'your package' or if you have Anaconda installed, 
+        conda install 'your package'. You can visit 
         https://pip.pypa.io/en/stable/installing/ if you want to know more.
 ```
 
