@@ -7,6 +7,9 @@ from numpy import pi, exp, real, imag, linspace
 from mpl_toolkits.mplot3d import Axes3D
 
 
+phi = ((1 + np.sqrt(5)) / 2)
+psi = (-1 / phi)
+
 # work in progress
 def MultiChoice():
     print("Now you can choose between this options:")
@@ -39,28 +42,88 @@ def MultiChoice():
 
 
 def real_pos():
-    print("die")
+    X = linspace(0.0, 7.0, 101, dtype=np.complex)
+    kk = 0
+    F_x = np.zeros(np.size(X), dtype=np.complex)
 
+    for i in X:
+        Psi = np.complex(psi)
+        F_x[kk] = ((phi**(i)) - (Psi**(i))) / np.sqrt(5)
+        kk = kk + 1
+
+    plt.figure()
+    plt.plot(real(F_x), imag(F_x))
+    plt.xlabel('Re')
+    plt.ylabel('Im')
+    plt.title('Positive Fibonacci function for real n')
+
+    plt.show()
 
 def real_neg():
-    print("die")
+    X = linspace(-7.0, 0.0, 142, dtype=np.complex)
+    kk = 0
+    F_x = np.zeros(np.size(X), dtype=np.complex)
+
+    for i in X:
+        Psi = np.complex(psi)
+        F_x[kk] = ((phi**(i)) - (Psi**(i))) / np.sqrt(5)
+        kk = kk + 1
+
+    plt.figure()
+    plt.plot(real(F_x), imag(F_x))
+    plt.xlabel('Re')
+    plt.ylabel('Im')
+    plt.title('Negative Fibonacci function for real n')
+
+    plt.show()
 
 
 def im_pos():
-    print("die")
+    X = 1j * linspace(0.0, 15.0, 151, dtype=np.complex)
+    kk = 0
+    F_x = np.zeros(np.size(X), dtype=np.complex)
+
+    for i in X:
+        Psi = np.complex(psi)
+        F_x[kk] = ((phi**(i)) - (Psi**(i))) / np.sqrt(5)
+        kk = kk + 1
+
+    plt.figure()
+    plt.plot(real(F_x), imag(F_x))
+    plt.xlabel('Re')
+    plt.ylabel('Im')
+    plt.title('Positive Fibonacci function for imaginary n')
+
+    plt.show()
 
 
 def im_neg():
-    print("die")
+    X = 1j * linspace(-15.0, 0.0, 151, dtype=np.complex)
+    kk = 0
+    F_x = np.zeros(np.size(X), dtype=np.complex)
+
+    for i in X:
+        Psi = np.complex(psi)
+        F_x[kk] = ((phi**(i)) - (Psi**(i))) / np.sqrt(5)
+        kk = kk + 1
+
+    plt.figure()
+    plt.plot(real(F_x), imag(F_x))
+    plt.xlabel('Re')
+    plt.ylabel('Im')
+    plt.title('Negative Fibonacci function for imaginary n')
+
+    plt.show()
 
 
 def re_comp():
-    print("die")
+    print("i'm working, this one is hard")
+     
 
 
 def im_comp():
-    print("die")
-
+    print("i'm working, this one is hard")
+    # this is hard
 
 def gigafibonaci():
     print("""This program takes as an input any number
@@ -76,9 +139,7 @@ def gigafibonaci():
     else:  
         exit(0)
 
-    phi = (1 + np.sqrt(5)) / 2
-    psi = -1 / phi
-
+    
     F_n = ((phi**numb) - (psi**numb)) / np.sqrt(5)
     
     if y == 0:
@@ -94,8 +155,4 @@ def gigafibonaci():
     MultiChoice()
     
     
-
-    
-
-
 gigafibonaci()
