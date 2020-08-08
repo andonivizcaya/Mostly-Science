@@ -194,7 +194,7 @@ def im_comp():
     ax.plot_surface(X, Y, W, rstride=1, cstride=1, facecolors=SW)
     ax.set_xlabel('Re')
     ax.set_ylabel('im')
-    ax.set_zlabel('Re(F(z))')
+    ax.set_zlabel('Im(F(z))')
     plt.title('Imaginary part of Complex-Valued Fibonacci')
 
     M = cm.ScalarMappable(cmap=cm.jet)
