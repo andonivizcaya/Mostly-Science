@@ -7,7 +7,7 @@ Liking science, having some coding knowledge and crazy ideas.
 
 ```
 For example, trying to give a way to visualize the generalized functional derivative.
-Maybe something less abstract, or maybe completely out of this world.
+Maybe something less abstract, or maybe something completely out of this world.
 ```
 
 ### Installing
@@ -32,11 +32,7 @@ Python: #use the command pip install 'your package' or if you have Anaconda inst
 ```
 C/C++: Maybe I'll be using these languages too. So be prepared.
 ```
-Finally, if you want to run your oun version, you're free to do that and give your feedback.
-
-## Contributing
-
-Please read [CONTRIBUTING.md](https://github.com/andonivizcaya/Mostly-Science/pulls) for details on the process for submitting pull requests.
+Finally, if you want to run your own version, you're free to do that and give your feedback.
 
 ## Authors
 
